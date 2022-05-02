@@ -1,9 +1,9 @@
 const AWS = require('aws-sdk');
 AWS.config.update( {
-  region: 'us-west-1'
+  region: 'us-east-1'
 });
 const dynamodb = new AWS.DynamoDB.DocumentClient();
-const dynamodbTableName = 'jai';
+const dynamodbTableName = 'TABLE-NAME';
 const healthPath = '/health';
 const productPath = '/product';
 const productsPath = '/products';
